@@ -6,7 +6,7 @@ const projGameRouter = require('./server/projGames');
 
 module.exports = app;
 
-const PORT = (process.env.port || 4001);
+const PORT = (process.env.PORT || 4001);
 
 app.use(express.static('public'));
 
