@@ -1,0 +1,277 @@
+* {
+    margin: 0;
+    padding: 0; 
+    line-height: 1;
+    font-family: 'Barlow', sans-serif;
+    text-decoration: none;
+}
+
+a{
+    color: black;
+}
+
+flexContainer{
+    display: flex;
+}
+
+/* Home Page ****************************************************************/
+
+.title, .linkText, .pageLink {
+    display: inline-block;
+    color: #ffff00;
+    background-color: rgb(0, 0, 0, 0.85);
+}
+
+.pageLink{
+    background-color: transparent;
+}
+
+.title{
+    font-size: 5vw;
+    padding: 3%;
+    width: 40%;
+    border-radius: 3%;
+    margin-top: 70vh;
+}
+
+.title span{
+    color: #6e47fc;
+}
+
+.container {
+    display: inline-block;
+    width: 40%;
+    margin-left: 10.5vw;
+    margin-top: 70vh;
+}
+
+.linkText {
+    font-size: 2vw;
+    margin: 2.5vw;
+    border-radius: 100%;
+    width: 1.5vw;
+    height: 1.5vw;
+}
+
+#projectsLink{
+    padding: 3.5vw 6.2vw 3.5vw .8vw;
+}
+
+#aboutLink{
+    padding: 3.5vw 5.3vw 3.5vw 1.7vw;
+}
+
+.homeBody {
+    color: #ffff00;
+    width: 100%;
+    height: 100%;
+    background-image: url("./backgroundHome.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    min-height: 100vh;
+    /* setting this min-height keeps the picture from leaving white space on the bottom
+    margins moved to h1 and section so that space above was not messing up stretch with this.  */
+}
+
+/* Main Pages Frameworks **************************************************/
+.projectsTitle,
+.aboutMeTitle{
+    margin-right: 0;
+    margin-left: auto;
+    color: rgb(0, 0, 0);
+    background-color: rgba(225, 225, 0, .95);
+    font-size: 5vw;
+    padding: 3%;
+    width: 40%;
+    margin-top: 5vh;
+    margin-bottom: 5vh;
+    border-top-left-radius: 3%;
+    border-bottom-left-radius: 3%;
+}
+
+.projectsBody,
+.displayBody,
+.aboutMeBody{
+    background-image: url("./backgroundOther.jpg");
+    background-size: cover;
+    min-height: 100vh;
+    
+}
+
+/* Projects Page *******************************************************/
+
+#projectDisplay {
+    margin-top: 15vh;
+    color: rgb(0, 0, 0);
+}
+
+.project img
+{
+    width: 20vw;
+    height: 15vw;
+    border-radius: 4%;
+}
+
+.details{
+    display: inline-block;
+    width: 73%;
+}
+
+.project div{
+    display: block;
+    margin-left: 20px;
+}
+
+.project .name{
+    font-weight: 900;
+    font-size: 2vw;
+    margin-bottom: 1%;
+}
+
+.project .dateCompleted{
+    margin-bottom: .5%;
+
+}
+
+.project .languages{
+    margin-bottom: 2%;
+}
+
+.project .description{
+    font-style: italic;
+}
+
+.project h4, 
+.project p,
+.project .description{
+    font-size: 2vw;
+}
+
+
+.project{
+    margin: 5vw 15vw 5vw 0;
+    padding: 3vw 2vw;
+    background-color: rgba(225, 225, 0, .95);
+    border-bottom-right-radius: 5%;
+    border-top-right-radius: 5%;
+}
+
+.projectsBody{
+    width: 100vw;
+}
+
+#viewLink {
+    color: yellow;
+}
+
+
+/* About Me Page */
+
+#aboutMeDisplay{
+    background-color: rgba(255,255,255, .7); 
+}
+
+#floated{
+    float: left;
+    width: 40vw;
+    height: 40vw;
+}
+
+.aboutMeDisplay{
+    margin-top: 10vh;
+}
+
+.aboutMeDisplay img{
+    border-radius: 100%; 
+    border: 1.75vw solid white; 
+    margin-left: 3vw;
+    height: 32vw;
+    width: 30vw;
+}
+
+.aboutMeDisplay p{
+    font-size: 3vh;
+    margin: 0px 7vw 7vh 7vw;
+    padding: 1vw;
+    background-color: rgba(255,255,255, .87);
+    border-radius: 5%;
+    line-height: 8vh;
+
+}
+
+/* Game Display and Project Display general */
+
+.projectGameDisplay{
+    margin: auto;
+    margin-top: 15vh;
+    background-color: rgba(255,255,255, .9);
+    border-radius: 5%;
+    height: 70vh;
+    width: 70vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.content{
+    text-align: center;
+    padding: 40px;
+}
+
+.content a{
+    color: blue;
+    text-decoration: underline;
+}
+
+/* Text Games (wild chef madness style) */
+.content.sameSize{
+    font-size: 2vw;
+    color: black;
+}
+
+.content button{
+    background-color: yellow;
+    padding: 10px 30px;
+    margin: 40px 60px;
+    border-radius: 10%;
+}
+
+/* Title with instructions template */
+.instructionsBody h1{
+    margin-bottom: 1.5vh;
+    font-size: 2.5vh;
+}
+
+.instructionsBody h2{
+    text-align: left;
+    font-size: 1.75vh
+}
+
+.instructionsTitle{
+    margin-bottom: 1vh;
+    text-align: center !important;
+    font-size: 1.75vh
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* 
+-possibly make black border around that is half opaque.
+-italicize FiveCentDev section
+*/
