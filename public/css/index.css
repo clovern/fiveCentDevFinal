@@ -238,8 +238,8 @@ flexContainer{
 
 /* Title with instructions template */
 .instructionsBody h1{
-    margin-bottom: 1.5vh;
     font-size: 2.5vh;
+    margin-bottom: 1.5vh;
 }
 
 .instructionsBody h2{
