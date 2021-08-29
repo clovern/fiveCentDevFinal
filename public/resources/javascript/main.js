@@ -18,7 +18,7 @@ addProject("./resources/javascript/jImages/gladiatorPIc.png", "Gladiator Game", 
 addProject("./resources/javascript/jImages/stopWatchPic.png", "Triple Stopwatch GUI", "February 2021", "Java", "", "Simple GUI running and saving/loading multiple stopwatches with various settings", "./stopWatch.html");
 addProject("./resources/javascript/jImages/fiveCentDevPic.png", "FiveCentDev Website", "December 2020 - Present", "JavaScript, HTML, CSS, Express (Node.js)", "", "This website! Clicking this banner will route you to the code on github.", "https://github.com/clovern/fiveCentDevFinal");
 addProject("./resources/javascript/jImages/Euchre.png", "Euchre", "April 2020", "Python, Tkinter (GUI)", "", "Euchre game against 3 AI players", "./Euchre.html");
-addProject("./resources/javascript/jImages/wildChefMadness.png", "Wild Chef Madness", "January 2020", "Python, Brython", "", "Text branching game simulating a cooking show", "wildChefMadness.html");
+// addProject("./resources/javascript/jImages/wildChefMadness.png", "Wild Chef Madness", "January 2020", "Python, Brython", "", "Text branching game simulating a cooking show", "wildChefMadness.html");
 
 /*this code connects this to my script reference in a compiled version for handlebars add-on, and then
 put the formatted version of that into the div with id projectDisplay.*/
