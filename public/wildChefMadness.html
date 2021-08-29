@@ -213,53 +213,53 @@
     #--------------------------------------------------------------
 
     for scenario in options:
-    scenario.value = scenario.value.replace("\n", "<br>")
+        scenario.value = scenario.value.replace("\n", "<br>")
 
 
-def createBinaryTree(arr, root, i, size):
-    if (i >= size):
-        return
-    root = arr[i]
-    if (i < len(button_options)):
-        root_buttons = button_options[i]
-    root.add_left_child(createBinaryTree(arr, root, 2 * i + 1, size))
-    root.add_right_child(createBinaryTree(arr, root, 2 * i + 2, size))
-    if (i < len(button_options)):
-        root.left_choice = root_buttons[0]
-        root.right_choice = root_buttons[1]
-    return root
-root = createBinaryTree(options, None, 0, len(options))
-def calculateTreeHeight(root):
-    if (root == None):
-        return 0
-    if (not root.left_child):
-        return 1
-    # string1 = str(root.value)
-    # string2 = str(root.left_child.value)
-    # print("First " + string1[0:10])
-    # print(string2[0:10])
-    return 1 + calculateTreeHeight(root.left_child)
-def traverseLevelOrder(root):
-    height = calculateTreeHeight(root)
-    for x in range(1, height + 1):
-        print("Level " + str(x) + ":")
-        traverseSingleLevel(root, x)
-        print("\n\n")
-def traverseSingleLevel(currentRoot, level):
-    if (level == 1):
-        if (currentRoot == None):
-            print("None")
-        else:
-            print(currentRoot.value)
-    else:
-        traverseSingleLevel(currentRoot.left_child, level - 1)
-        traverseSingleLevel(currentRoot.right_child, level - 1);
+    def createBinaryTree(arr, root, i, size):
+        if (i >= size):
+            return
+        root = arr[i]
+        if (i < len(button_options)):
+            root_buttons = button_options[i]
+        root.add_left_child(createBinaryTree(arr, root, 2 * i + 1, size))
+        root.add_right_child(createBinaryTree(arr, root, 2 * i + 2, size))
+        if (i < len(button_options)):
+            root.left_choice = root_buttons[0]
+            root.right_choice = root_buttons[1]
+        return root
     root = createBinaryTree(options, None, 0, len(options))
+    def calculateTreeHeight(root):
+        if (root == None):
+            return 0
+        if (not root.left_child):
+            return 1
+        # string1 = str(root.value)
+        # string2 = str(root.left_child.value)
+        # print("First " + string1[0:10])
+        # print(string2[0:10])
+        return 1 + calculateTreeHeight(root.left_child)
+    def traverseLevelOrder(root):
+        height = calculateTreeHeight(root)
+        for x in range(1, height + 1):
+            print("Level " + str(x) + ":")
+            traverseSingleLevel(root, x)
+            print("\n\n")
+    def traverseSingleLevel(currentRoot, level):
+        if (level == 1):
+            if (currentRoot == None):
+                print("None")
+            else:
+                print(currentRoot.value)
+        else:
+            traverseSingleLevel(currentRoot.left_child, level - 1)
+            traverseSingleLevel(currentRoot.right_child, level - 1);
+        root = createBinaryTree(options, None, 0, len(options))
 
-    
-def begin_game():
-    document["scenarios"].html = greeting
-begin_game()
+        
+    def begin_game():
+        document["scenarios"].html = greeting
+    begin_game()
 </script>
 
 </body>
