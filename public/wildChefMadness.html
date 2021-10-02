@@ -7,15 +7,26 @@
     <link href="https://fonts.googleapis.com/css2?family=Barlow:ital,wght@1,200&display=swap" rel="stylesheet">
     <title>wildChefMadness</title>
 </head>
+<header>
+    <nav class="mainNav">
+        <ul>
+            <li><a href="./projectsHome.html">Projects</a></li>
+            <li><a href="./aboutMe.html">About Me</a></li>
+            <li><a href="./home.html">Home</a></li>
+        </ul>
+    </nav>
+</header>
 <script type="text/javascript" src="brython.js"></script>
 <script type="text/javascript" src="brython_stdlib.js"></script>
 <body class="displayBody" onload="brython(1)">
     <div class="projectGameDisplay">
         <div class="content sameSize">
             <p id="scenarios"></p> 
+            <div>
             <button id="btnA">Yes</button> 
             <button id="btnB">No</button>
             <h1 id="viewLink"></h1>
+            </div>
         </div>
     </div>
     <script type="text/python">
@@ -27,9 +38,6 @@
             currentNode = root
         else:
             global currentNode
-            #if ((not currentNode.left_child) and (not currentNode.right_child)) or (currentNode.left_child.value == "") or (currentNode.right_child.value == ""):
-            #    playAgain()
-            #    return
             currentNode = currentNode.left_child
         document["scenarios"].html = currentNode.value
         if (currentNode.left_choice == None) and (currentNode.right_choice == None):
@@ -41,11 +49,10 @@
     def bClickHandler(e):
         if currentNode == None:
             document["scenarios"].html = "Alright, have a great day!"
+            document.getElementById("btnA").style.display = "none";
+            document.getElementById("btnB").style.display = "none";
         else:
             global currentNode
-            #if ((not currentNode.left_child) and (not currentNode.right_child)) or (currentNode.left_child.value == "") or (currentNode.right_child.value == ""):
-            #    playAgain()
-            #    return
             currentNode = currentNode.right_child
         document["scenarios"].html = currentNode.value
         if (currentNode.left_choice == None) and (currentNode.right_choice == None):
@@ -53,8 +60,8 @@
             return
         document.getElementById("btnA").innerHTML = currentNode.left_choice;
         document.getElementById("btnB").innerHTML = currentNode.right_choice;
+
     def playAgain():
-        print("in play again") #FIXME
         document.getElementById("btnA").innerHTML = "Play again";
         document.getElementById("btnB").innerHTML = "Stop Playing";
         global currentNode
@@ -229,22 +236,21 @@
             root.right_choice = root_buttons[1]
         return root
     root = createBinaryTree(options, None, 0, len(options))
+
     def calculateTreeHeight(root):
         if (root == None):
             return 0
         if (not root.left_child):
             return 1
-        # string1 = str(root.value)
-        # string2 = str(root.left_child.value)
-        # print("First " + string1[0:10])
-        # print(string2[0:10])
         return 1 + calculateTreeHeight(root.left_child)
+
     def traverseLevelOrder(root):
         height = calculateTreeHeight(root)
         for x in range(1, height + 1):
             print("Level " + str(x) + ":")
             traverseSingleLevel(root, x)
             print("\n\n")
+
     def traverseSingleLevel(currentRoot, level):
         if (level == 1):
             if (currentRoot == None):

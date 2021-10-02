@@ -14,6 +14,28 @@ flexContainer{
     display: flex;
 }
 
+/*Navigation Bars ***********************************************************/
+
+.mainNav ul{
+    padding-top: 1.5vh;
+    padding-bottom: 1vh;
+    text-align: right;
+    padding-right: 1.5vw;
+}
+
+.mainNav a{
+    color: #ffff00;
+}
+
+.mainNav li{
+    display: inline-block;
+    margin: 0 .5vw;
+    padding: .5vh .5vw .2vh .5vw;
+    font-size: 2.5vh;
+    background-color: #111111;
+    border-radius: 7%;
+}
+
 /* Home Page ****************************************************************/
 
 .title, .linkText, .pageLink {
@@ -30,7 +52,8 @@ flexContainer{
     font-size: 5vw;
     padding: 3%;
     width: 40%;
-    border-radius: 3%;
+    border-top-right-radius: 3%;
+    border-bottom-right-radius: 3%;
     margin-top: 70vh;
 }
 
@@ -201,9 +224,17 @@ flexContainer{
 
 /* Game Display and Project Display general */
 
-.projectGameDisplay{
+.projectGameDisplay {
     margin: auto;
-    margin-top: 15vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.content {
+    text-align: center;
+    padding: 40px;
+    margin-top: 7vh;
     background-color: rgba(255,255,255, .9);
     border-radius: 5%;
     height: 70vh;
@@ -211,11 +242,21 @@ flexContainer{
     display: flex;
     align-items: center;
     justify-content: center;
+    flex-direction: column;
 }
 
-.content{
-    text-align: center;
-    padding: 40px;
+.content h1 {
+    font-size: 1.8vw;
+}
+
+.content h3 {
+    margin-top: 1.5vh;
+    font-size: 1.2vw;
+}
+
+.content iframe {
+    flex-basis: 504px;
+    width: 50vw;
 }
 
 .content a{
@@ -223,10 +264,15 @@ flexContainer{
     text-decoration: underline;
 }
 
+.content h3{
+    margin-top: 1.5vh;
+}
+
 /* Text Games (wild chef madness style) */
 .content.sameSize{
     font-size: 2vw;
     color: black;
+    text-align: center;
 }
 
 .content button{
@@ -234,6 +280,7 @@ flexContainer{
     padding: 10px 30px;
     margin: 40px 60px;
     border-radius: 10%;
+    display: inline-block;
 }
 
 /* Title with instructions template */
