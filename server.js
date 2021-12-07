@@ -5,7 +5,7 @@ const cors = require('cors');
 
 module.exports = app;
 
-const PORT = (process.env.PORT || 4001);
+const PORT = (process.env.port || 4001);
 
 app.use(express.static('public'));
 
@@ -16,6 +16,8 @@ const bodyParser = require('body-parser');
 app.use(bodyParser.json());
 
 app.get('/', function(req, res) {
+  res.sendStatus(200);
+  http_response_code(200);
   res.redirect('/home.html')
 });
 
