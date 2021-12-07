@@ -16,8 +16,8 @@ const bodyParser = require('body-parser');
 app.use(bodyParser.json());
 
 app.get('/', function(req, res) {
-  res.sendStatus(200);
-//   http_response_code(200);
+//   res.sendStatus(200);
+  http_response_code(200);
   res.redirect('/home.html')
 });
 
