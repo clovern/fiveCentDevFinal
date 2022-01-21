@@ -88,13 +88,26 @@ flexContainer{
     color: #ffff00;
     width: 100%;
     height: 100%;
-    background-image: url("./backgroundHome.jpg");
     background-size: cover;
     background-repeat: no-repeat;
     min-height: 100vh;
     /* setting this min-height keeps the picture from leaving white space on the bottom
     margins moved to h1 and section so that space above was not messing up stretch with this.  */
 }
+
+@media (max-width: 480px) {
+    .homeBody{
+        background-image: url("./backgroundHomeMobile.jpg");
+    }
+}
+
+@media (min-width: 480px) {
+    .homeBody{
+        background-image: url("./backgroundHome.jpg");
+    }
+}
+
+
 
 /* Main Pages Frameworks **************************************************/
 .projectsTitle,
@@ -112,13 +125,20 @@ flexContainer{
     border-bottom-left-radius: 3%;
 }
 
-.projectsBody,
-.displayBody,
-.aboutMeBody{
-    background-image: url("./backgroundOther.jpg");
-    background-size: cover;
-    min-height: 100vh;
-    
+@media (min-width: 480px) {
+    .projectsBody,
+    .displayBody,
+    .aboutMeBody{
+        background-image: url("./backgroundOther.jpg");
+    }
+}
+
+@media (max-width: 480px) {
+    .projectsBody,
+    .displayBody,
+    .aboutMeBody{
+        background-image: url("./backgroundOtherMobile.jpg");
+    }
 }
 
 /* Projects Page *******************************************************/
