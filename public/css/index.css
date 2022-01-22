@@ -130,6 +130,8 @@ flexContainer{
     .displayBody,
     .aboutMeBody{
         background-image: url("./backgroundOther.jpg");
+        background-size: cover;
+        background-repeat: no-repeat;
     }
 }
 
@@ -138,6 +140,8 @@ flexContainer{
     .displayBody,
     .aboutMeBody{
         background-image: url("./backgroundOtherMobile.jpg");
+        background-size: cover;
+        background-repeat: no-repeat;
     }
 }
 
