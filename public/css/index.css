@@ -214,14 +214,10 @@ flexContainer{
 
 /* About Me Page */
 
-#aboutMeDisplay{
-    background-color: rgba(255,255,255, .7); 
-}
-
 #floated{
     float: left;
     width: 40vw;
-    height: 40vw;
+    height: 45vw;
 }
 
 .aboutMeDisplay{
@@ -236,14 +232,16 @@ flexContainer{
     width: 30vw;
 }
 
+.aboutMeDisplay .text{
+    background-color: rgba(255,255,255, .87);
+    margin: 0px 7vw 7vh 7vw;
+    border-radius: 5%;
+}
+
 .aboutMeDisplay p{
     font-size: 3vh;
-    margin: 0px 7vw 7vh 7vw;
-    padding: 1vw;
-    background-color: rgba(255,255,255, .87);
-    border-radius: 5%;
     line-height: 8vh;
-
+    padding: 1vw;
 }
 
 /* Game Display and Project Display general */
