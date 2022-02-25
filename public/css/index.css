@@ -14,6 +14,7 @@ flexContainer{
     display: flex;
 }
 
+
 /*Navigation Bars ***********************************************************/
 
 .mainNav ul{
@@ -68,13 +69,44 @@ flexContainer{
     margin-top: 70vh;
 }
 
-.linkText {
-    font-size: 2vw;
-    margin: 2.5vw;
-    border-radius: 100%;
-    width: 1.5vw;
-    height: 1.5vw;
+@media (max-width: 480px) {
+    .linkText {
+        font-size: 2vh;
+        margin: 1.5vw;
+        border-radius: 100%;
+        width: 1.5vh;
+        height: 1.5vh;
+    }
+
+    .title{
+        font-size: 5v;
+        padding: 3%;
+        width: 40%;
+        border-top-right-radius: 3%;
+        border-bottom-right-radius: 3%;
+        margin-top: 70vh;
+    }
 }
+
+@media (min-width: 480px) {
+    .linkText {
+        font-size: 2vw;
+        margin: 1.5vw;
+        border-radius: 100%;
+        width: 1.5vw;
+        height: 1.5vw;
+    }
+
+    .title{
+        font-size: 5vw;
+        padding: 3%;
+        width: 40%;
+        border-top-right-radius: 3%;
+        border-bottom-right-radius: 3%;
+        margin-top: 70vh;
+    }
+}
+
 
 #projectsLink{
     padding: 3.5vw 6.2vw 3.5vw .8vw;
@@ -82,6 +114,10 @@ flexContainer{
 
 #aboutLink{
     padding: 3.5vw 5.3vw 3.5vw 1.7vw;
+}
+
+#resumeLink{
+    padding: 3.5vw 6.0vw 3.5vw 1.0vw;
 }
 
 .homeBody {
@@ -110,8 +146,7 @@ flexContainer{
 
 
 /* Main Pages Frameworks **************************************************/
-.projectsTitle,
-.aboutMeTitle{
+    .mainTitle{
     margin-right: 0;
     margin-left: auto;
     color: rgb(0, 0, 0);
@@ -126,9 +161,8 @@ flexContainer{
 }
 
 @media (min-width: 480px) {
-    .projectsBody,
     .displayBody,
-    .aboutMeBody{
+    .mainBody{
         background-image: url("./backgroundOther.jpg");
         background-size: cover;
         background-repeat: no-repeat;
@@ -136,9 +170,8 @@ flexContainer{
 }
 
 @media (max-width: 480px) {
-    .projectsBody,
     .displayBody,
-    .aboutMeBody{
+    .mainBody{
         background-image: url("./backgroundOtherMobile.jpg");
         background-size: cover;
         background-repeat: no-repeat;
@@ -238,10 +271,20 @@ flexContainer{
     border-radius: 5%;
 }
 
-.aboutMeDisplay p{
-    font-size: 3vh;
-    line-height: 8vh;
-    padding: 1vw;
+@media (max-width: 480px) {
+    .aboutMeDisplay p{
+        font-size: 3vw;
+        line-height: 4vw;
+        padding: 1vw;
+    }
+}
+
+@media (min-width: 480px) {
+    .aboutMeDisplay p{
+        font-size: 3vh;
+        line-height: 8vh;
+        padding: 1vw;
+    }
 }
 
 /* Game Display and Project Display general */
@@ -313,34 +356,23 @@ flexContainer{
 
 .instructionsBody h2{
     text-align: left;
-    font-size: 1.75vh
+    font-size: 1.75vh;
 }
 
 .instructionsTitle{
     margin-bottom: 1vh;
     text-align: center !important;
-    font-size: 1.75vh
+    font-size: 1.75vh;
+}
+
+/*Resume Display Page*************************/
+
+.resumeDisplay iframe{
+    width: 60%;
+    height: 120vh;
+    margin-left: 20vw;
+    margin-top: 10vh;
+    margin-bottom: 10vh;
 }
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/* 
--possibly make black border around that is half opaque.
--italicize FiveCentDev section
-*/
