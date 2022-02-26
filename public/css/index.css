@@ -367,9 +367,9 @@ flexContainer{
 
 /*Resume Display Page*************************/
 
-.resumeDisplay iframe{
-    width: 60%;
-    height: 120vh;
+.resumeDisplay img{
+    width: 60vw;
+    height: auto;
     margin-left: 20vw;
     margin-top: 10vh;
     margin-bottom: 10vh;
