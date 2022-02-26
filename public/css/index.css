@@ -72,9 +72,9 @@ flexContainer{
     }
 
     .title{
-        font-size: 5v;
+        font-size: 5vh;
         padding: 3%;
-        width: 40%;
+        width: 50%;
         border-top-right-radius: 3%;
         border-bottom-right-radius: 3%;
         margin-top: 70vh;
@@ -85,6 +85,18 @@ flexContainer{
         width: 40%;
         margin-left: 5.5vw;
         margin-top: 70vh;
+    }
+
+    #projectsLink {
+        padding: 3.5vh 6.5vh 3.5vh 1.0vh;
+    }
+    
+    #aboutLink {
+        padding: 3.5vh 6vh 3.5vh 1.5vh;
+    }
+    
+    #resumeLink {
+        padding: 3.5vh 6.5vh 3.5vh 1vh;
     }
 }
 
@@ -112,19 +124,18 @@ flexContainer{
         margin-left: 10.5vw;
         margin-top: 70vh;
     }
-}
 
-
-#projectsLink{
-    padding: 3.5vw 6.2vw 3.5vw .8vw;
-}
-
-#aboutLink{
-    padding: 3.5vw 5.3vw 3.5vw 1.7vw;
-}
-
-#resumeLink{
-    padding: 3.5vw 6.0vw 3.5vw 1.0vw;
+    #projectsLink{
+        padding: 3.5vw 6.2vw 3.5vw .8vw;
+    }
+    
+    #aboutLink{
+        padding: 3.5vw 5.3vw 3.5vw 1.7vw;
+    }
+    
+    #resumeLink{
+        padding: 3.5vw 6.0vw 3.5vw 1.0vw;
+    }
 }
 
 .homeBody {
@@ -173,6 +184,7 @@ flexContainer{
         background-image: url("./backgroundOther.jpg");
         background-size: cover;
         background-repeat: no-repeat;
+        height: 100vh;
     }
 }
 
@@ -182,6 +194,7 @@ flexContainer{
         background-image: url("./backgroundOtherMobile.jpg");
         background-size: cover;
         background-repeat: no-repeat;
+        height: 100vh; 
     }
 }
 
@@ -209,21 +222,6 @@ flexContainer{
     margin-left: 20px;
 }
 
-.project .name{
-    font-weight: 900;
-    font-size: 2vw;
-    margin-bottom: 1%;
-}
-
-.project .dateCompleted{
-    margin-bottom: .5%;
-
-}
-
-.project .languages{
-    margin-bottom: 2%;
-}
-
 .project .description{
     font-style: italic;
 }
@@ -242,6 +240,41 @@ flexContainer{
     border-bottom-right-radius: 5%;
     border-top-right-radius: 5%;
 }
+
+@media (min-width: 480px) {
+    .project .name{
+        font-weight: 900;
+        font-size: 2vw;
+        margin-bottom: 1%;
+    }
+    
+    .project .dateCompleted{
+        margin-bottom: .5%;
+    }
+    
+    .project .languages{
+        margin-bottom: 2%;
+    }
+}
+
+@media (max-width: 480px) {
+    .project .name {
+        font-weight: 900;
+        font-size: 2vh;
+        margin-bottom: 1%;
+    }
+
+    .project .dateCompleted {
+        margin-bottom: .5%;
+        font-size: 1.5vh;
+    }
+
+    .project .languages {
+        margin-bottom: 2%;
+        font-size: 1.5vh;
+    }
+}
+
 
 .projectsBody{
     width: 100vw;
