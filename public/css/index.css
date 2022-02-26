@@ -49,15 +49,6 @@ flexContainer{
     background-color: transparent;
 }
 
-.title{
-    font-size: 5vw;
-    padding: 3%;
-    width: 40%;
-    border-top-right-radius: 3%;
-    border-bottom-right-radius: 3%;
-    margin-top: 70vh;
-}
-
 .title span{
     color: #6e47fc;
 }
@@ -74,7 +65,7 @@ flexContainer{
     .title{
         font-size: 5vh;
         padding: 3%;
-        width: 50%;
+        width: 55%;
         border-top-right-radius: 3%;
         border-bottom-right-radius: 3%;
         margin-top: 70vh;
@@ -82,7 +73,7 @@ flexContainer{
 
     .container {
         display: inline-block;
-        width: 40%;
+        width: 20%;
         margin-left: 5.5vw;
         margin-top: 70vh;
     }
@@ -184,7 +175,6 @@ flexContainer{
         background-image: url("./backgroundOther.jpg");
         background-size: cover;
         background-repeat: no-repeat;
-        height: 100vh;
     }
 }
 
@@ -194,7 +184,6 @@ flexContainer{
         background-image: url("./backgroundOtherMobile.jpg");
         background-size: cover;
         background-repeat: no-repeat;
-        height: 100vh; 
     }
 }
 
@@ -295,6 +284,7 @@ flexContainer{
 
 .aboutMeDisplay{
     margin-top: 10vh;
+    margin-bottom: 30vh;
 }
 
 .aboutMeDisplay img{
@@ -412,7 +402,7 @@ flexContainer{
     height: auto;
     margin-left: 20vw;
     margin-top: 10vh;
-    margin-bottom: 10vh;
+    margin-bottom: 30vh;
 }
 
 
