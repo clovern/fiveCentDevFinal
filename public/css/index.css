@@ -62,13 +62,6 @@ flexContainer{
     color: #6e47fc;
 }
 
-.container {
-    display: inline-block;
-    width: 40%;
-    margin-left: 10.5vw;
-    margin-top: 70vh;
-}
-
 @media (max-width: 480px) {
     .linkText {
         font-size: 2vh;
@@ -84,6 +77,13 @@ flexContainer{
         width: 40%;
         border-top-right-radius: 3%;
         border-bottom-right-radius: 3%;
+        margin-top: 70vh;
+    }
+
+    .container {
+        display: inline-block;
+        width: 40%;
+        margin-left: 5.5vw;
         margin-top: 70vh;
     }
 }
@@ -103,6 +103,13 @@ flexContainer{
         width: 40%;
         border-top-right-radius: 3%;
         border-bottom-right-radius: 3%;
+        margin-top: 70vh;
+    }
+
+    .container {
+        display: inline-block;
+        width: 40%;
+        margin-left: 10.5vw;
         margin-top: 70vh;
     }
 }
