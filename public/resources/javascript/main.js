@@ -13,7 +13,7 @@ function addProject(image, name, dateCompleted, languagesUsed, librariesUsed, de
 // addProject("./resources/javascript/jImages/pokeStats.png", "Pokemon Stats Data Analysis", "April 2020", "Python", "iPywidgets (Jupyter notebook), \
 // matplotlib, pandas", "retrieves useful information such as stat spread, strongest pokemon per type, \nstrengths and weaknesses \
 // per pokemon in a table format", "./pokeStats.html");
-addProject("./resources/javascript/jImages/bossMachinePic.png", "Boss Machine", "April 2022", "Node.js (Express)", "", "Added web server to connect front and back end on a quirky business website", "bossMachine.html");
+// addProject("./resources/javascript/jImages/bossMachinePic.png", "Boss Machine", "April 2022", "Node.js (Express)", "", "Added web server to connect front and back end on a quirky business website", "bossMachine.html");
 addProject("./resources/javascript/jImages/symbolTable.png", "Symbol Table", "July 2021", "C", "", "C Program simulating functionality of the symbol table made by assembler", "symbolTable.html");
 addProject("./resources/javascript/jImages/rentalStoreGUIPic.png", "Game Rental Store Interface", "March 2021", "Java", "", "Interface to help game rental store owner track information about customer rentals", "./gameRental.html");
 addProject("./resources/javascript/jImages/gladiatorPIc.png", "Gladiator Game", "April 2021", "Java", "", "Survival text game implementing queus of monsters attacking from each cardinal direction", "./gladiator.html");
