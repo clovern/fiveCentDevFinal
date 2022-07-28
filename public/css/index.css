@@ -4,14 +4,11 @@
     line-height: 1;
     font-family: 'Barlow', sans-serif;
     text-decoration: none;
+    box-sizing: border-box;
 }
 
 a{
-    color: black;
-}
-
-flexContainer{
-    display: flex;
+    color: rgb(9, 56, 14);
 }
 
 
@@ -19,131 +16,42 @@ flexContainer{
 
 .mainNav ul{
     padding-top: 1.5vh;
-    padding-bottom: 1vh;
-    text-align: right;
-    padding-right: 1.5vw;
-}
-
-.mainNav a{
-    color: #ffff00;
+    text-align: center;
 }
 
 .mainNav li{
     display: inline-block;
     margin: 0 .5vw;
-    padding: .5vh .5vw .2vh .5vw;
     font-size: 2.5vh;
-    background-color: #111111;
-    border-radius: 7%;
 }
 
 /* Home Page ****************************************************************/
 
-.title, .linkText, .pageLink {
+
+.linkText {
+    font-size: 2vw;
+    margin: 1.5vh;
+    width: 1.5vw;
+    height: 1.5vw;
+}
+
+.linkText a{
+    color: rgb(9, 56, 14);
+}
+
+.title{
+    color: rgb(9, 56, 14);
+    font-size: 5vw;
+    width: 30vw;
     display: inline-block;
-    color: #ffff00;
-    background-color: rgb(0, 0, 0, 0.85);
+    position: relative;
+    top: -5vh; 
 }
 
-.pageLink{
-    background-color: transparent;
-}
-
-.title span{
-    color: #6e47fc;
-}
-
-@media (max-width: 480px) {
-    .linkText {
-        font-size: 2vh;
-        margin: 1.5vw;
-        border-radius: 100%;
-        width: 1.5vh;
-        height: 1.5vh;
-    }
-
-    .title{
-        font-size: 5vh;
-        padding: 3%;
-        width: 55%;
-        border-top-right-radius: 3%;
-        border-bottom-right-radius: 3%;
-        margin-top: 70vh;
-    }
-
-    .container {
-        display: inline-block;
-        width: 20%;
-        margin-left: 5.5vw;
-        margin-top: 70vh;
-    }
-
-    #projectsLink {
-        padding: 3.5vh 6.5vh 3.5vh 1.0vh;
-    }
-    
-    #aboutLink {
-        padding: 3.5vh 6vh 3.5vh 1.5vh;
-    }
-    
-    #resumeLink {
-        padding: 3.5vh 6.5vh 3.5vh 1vh;
-    }
-}
-
-@media (min-width: 480px) {
-    .linkText {
-        font-size: 2vw;
-        margin: 1.5vw;
-        border-radius: 100%;
-        width: 1.5vw;
-        height: 1.5vw;
-    }
-
-    .title{
-        font-size: 5vw;
-        padding: 3%;
-        width: 40%;
-        border-top-right-radius: 3%;
-        border-bottom-right-radius: 3%;
-        margin-top: 70vh;
-    }
-
-    .container {
-        display: inline-block;
-        width: 40%;
-        margin-left: 10.5vw;
-        margin-top: 70vh;
-    }
-
-    #projectsLink{
-        padding: 3.5vw 6.2vw 3.5vw .8vw;
-    }
-    
-    #aboutLink{
-        padding: 3.5vw 5.3vw 3.5vw 1.7vw;
-    }
-    
-    #resumeLink{
-        padding: 3.5vw 6.0vw 3.5vw 1.0vw;
-    }
-}
-
-.homeBody {
-    color: #ffff00;
-    width: 100%;
-    height: 100%;
-    background-size: cover;
-    background-repeat: no-repeat;
-    min-height: 100vh;
-    /* setting this min-height keeps the picture from leaving white space on the bottom
-    margins moved to h1 and section so that space above was not messing up stretch with this.  */
-}
-
-@media (max-width: 480px) {
-    .homeBody{
-        background-image: url("./backgroundHomeMobile.jpg");
-    }
+.container {
+    display: inline-block;
+    width: 30vw;
+    margin: 10vh 29vw 0 6vw; 
 }
 
 @media (min-width: 480px) {
@@ -152,125 +60,81 @@ flexContainer{
     }
 }
 
+@media (max-width: 480px) {
+    .homeBody{
+        background-image: url("./backgroundHomeMobile.jpg");
+    }
+}
+
+
+
+.homeBody {
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: bottom; 
+    background-repeat: no-repeat;
+    min-height: 100vh;
+}
 
 
 /* Main Pages Frameworks **************************************************/
-    .mainTitle{
-    margin-right: 0;
-    margin-left: auto;
-    color: rgb(0, 0, 0);
-    background-color: rgba(225, 225, 0, .95);
-    font-size: 5vw;
-    padding: 3%;
-    width: 40%;
-    margin-top: 5vh;
-    margin-bottom: 5vh;
-    border-top-left-radius: 3%;
-    border-bottom-left-radius: 3%;
+.mainTitle{
+    margin: 10vh 0 0 3vw; 
+    font-size: 10vw;
+    color: rgb(9, 56, 14);
 }
 
-@media (min-width: 480px) {
-    .displayBody,
-    .mainBody{
-        background-image: url("./backgroundOther.jpg");
-        background-size: cover;
-        background-repeat: no-repeat;
-    }
-}
-
-@media (max-width: 480px) {
-    .displayBody,
-    .mainBody{
-        background-image: url("./backgroundOtherMobile.jpg");
-        background-size: cover;
-        background-repeat: no-repeat;
-    }
+.displayBody,
+.mainBody{
+    background-color: #D7D7D7;
 }
 
 /* Projects Page *******************************************************/
 
 #projectDisplay {
     margin-top: 15vh;
-    color: rgb(0, 0, 0);
 }
-
-.project img
-{
-    width: 20vw;
-    height: 15vw;
-    border-radius: 4%;
-}
-
-.details{
-    display: inline-block;
-    width: 73%;
-}
-
-.project div{
-    display: block;
-    margin-left: 20px;
-}
-
-.project .description{
-    font-style: italic;
-}
-
-.project h4, 
-.project p,
-.project .description{
-    font-size: 2vw;
-}
-
 
 .project{
-    margin: 5vw 15vw 5vw 0;
-    padding: 3vw 2vw;
-    background-color: rgba(225, 225, 0, .95);
-    border-bottom-right-radius: 5%;
-    border-top-right-radius: 5%;
+    display: block; 
+    margin-bottom: 10vh; 
+    text-align: right; 
+    color: rgb(9, 56, 14);
 }
 
-@media (min-width: 480px) {
-    .project .name{
-        font-weight: 900;
-        font-size: 2vw;
-        margin-bottom: 1%;
-    }
-    
-    .project .dateCompleted{
-        margin-bottom: .5%;
-    }
-    
-    .project .languages{
-        margin-bottom: 2%;
-    }
+.project .details{
+    position: absolute; 
+    width: 55vw;
+    height: 20vw;
+    background-color: white; 
+    text-align: left;
+    border-radius: 5%;
+    z-index: 1; 
+    margin-top: 5vw; 
+    margin-left: 4vw; 
+    padding-top: 5vw; 
+    color: rgb(9, 56, 14);
+    font-size: 1.5vw; 
+    padding-left: 5vw; 
 }
 
-@media (max-width: 480px) {
-    .project .name {
-        font-weight: 900;
-        font-size: 2vh;
-        margin-bottom: 1%;
-    }
-
-    .project .dateCompleted {
-        margin-bottom: .5%;
-        font-size: 1.5vh;
-    }
-
-    .project .languages {
-        margin-bottom: 2%;
-        font-size: 1.5vh;
-    }
+.project .details:hover{
+    cursor: pointer;
 }
 
-
-.projectsBody{
-    width: 100vw;
+.project .imageBlock{
+    margin-right: 3vw;
 }
 
-#viewLink {
-    color: yellow;
+.project .image{
+    width: 40vw;
+    height: 30vw; 
+    border-radius: 5%;
+}
+
+.project .image:hover{
+    cursor: pointer; 
 }
 
 
@@ -301,6 +165,14 @@ flexContainer{
     border-radius: 5%;
 }
 
+@media (min-width: 480px) {
+    .aboutMeDisplay p{
+        font-size: 3vh;
+        line-height: 8vh;
+        padding: 1vw;
+    }
+}
+
 @media (max-width: 480px) {
     .aboutMeDisplay p{
         font-size: 3vw;
@@ -309,13 +181,6 @@ flexContainer{
     }
 }
 
-@media (min-width: 480px) {
-    .aboutMeDisplay p{
-        font-size: 3vh;
-        line-height: 8vh;
-        padding: 1vw;
-    }
-}
 
 /* Game Display and Project Display general */
 

@@ -10,15 +10,17 @@
     <script id = "projectsTemplate" type = "text/x-handlebars-template">
         {{#each projectList}}
         <div class="project linkSource" data-link="{{this.sourceCodeLink}}" key={{this.key}}>
-          <img class="image" src={{this.image}} alt= {{this.name}}>
-          <section class="details">
-            <div class = "flexContainer autoMargin">
+          <section>
+            <div class = "details">
               <h2 class="name">{{this.name}}</h2>
               <h3 class="dateCompleted">{{this.dateCompleted}}</h3>
               <h3 class="languages">Languages Used: {{this.languagesUsed}}</h3>
               <p class="description">{{this.description}}</p>
-            </section>
-          </div>
+            </div>
+            <div class="imageBlock">
+              <img class="image" src={{this.image}} alt= {{this.name}}>
+            </div>
+          </section>
         </div>
       {{/each}}
     </script>
@@ -34,7 +36,7 @@
   </nav>
 </header>
 <body class="mainBody projectsBody">
-    <h1 class="mainTitle">Projects</h1>
+    <h1 class="mainTitle">PROJECTS</h1>
     <div id="projectDisplay">
 
     </div>
