@@ -224,8 +224,19 @@ a{
     text-decoration: underline;
 }
 
-.content h3{
-    margin-top: 1.5vh;
+.content button{
+    background-color: rgb(9, 56, 14);
+    color: white;
+}
+
+.passwordInput {
+    padding: 10px;
+}
+
+.passwordInput button{
+    padding: 7px 20px;
+    border-radius: 10%;
+    margin-top: 5px; 
 }
 
 /* Text Games (wild chef madness style) */
@@ -235,8 +246,9 @@ a{
     text-align: center;
 }
 
-.content button{
-    background-color: yellow;
+.content .wildChefButton{
+    background-color: rgb(9, 56, 14);
+    color: white;
     padding: 10px 30px;
     margin: 40px 60px;
     border-radius: 10%;
@@ -268,6 +280,18 @@ a{
     margin-left: 20vw;
     margin-top: 10vh;
     margin-bottom: 30vh;
+}
+
+/*Protected code html pages***********************/
+
+.mycodeHighlight{
+    color: green;
+}
+
+.codeDisplay p{
+    padding: 10px;
+    font-family: "Courier New", Courier, serif;
+    font-size: .9em;
 }
 
 

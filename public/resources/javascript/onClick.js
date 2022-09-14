@@ -1,6 +1,7 @@
 let linkProviders = document.getElementsByClassName("linkSource");
 
 const linkHelper = function(event){
+
     let element = event.target;
     let link = element.getAttribute("data-link");
     if (link == null){
