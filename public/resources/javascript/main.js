@@ -8,7 +8,7 @@ function addProject(image, name, dateCompleted, languagesUsed, librariesUsed, de
     "librariesUsed": librariesUsed, "description": description, "sourceCodeLink": sourceCodeLink})
     }
 
-
+    addProject("./resources/javascript/jImages/tripPlannerSite.png", "Trip Planning Website", "May 2023", "React, Java Spark, SQL", "", "Website for planning trips. Features were added to an existing code base as part of a 5 person team, using github, zenhub, and SCRUM based Agile methodology for our collaboration.", "./tripPlanningSite.html");
 addProject("./resources/javascript/jImages/blockStreamCipher.png", "Block & Stream Ciphers", "June 2022", "C++", "", "encrypts and decrypts file through a symmetric key system.", "./blockStreamCipher.html");
 addProject("./resources/javascript/jImages/symbolTable.png", "Symbol Table", "July 2021", "C", "", "C Program simulating functionality of the symbol table made by assembler", "symbolTable.html");
 addProject("./resources/javascript/jImages/rentalStoreGUIPic.png", "Game Rental Store Interface", "March 2021", "Java", "", "Interface to help game rental store owner track information about customer rentals", "./gameRental.html");
