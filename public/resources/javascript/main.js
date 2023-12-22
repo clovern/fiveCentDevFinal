@@ -16,7 +16,7 @@ addProject("./resources/javascript/jImages/pageRank.png", "Mini Search Engine", 
 addProject("./resources/javascript/jImages/tripPlannerSite.png", "Trip Planning Website", "May 2023", "React, Java Spark, SQL", "", "Website for planning trips. Features were added to an existing code base as part of a 5 person team, using github, zenhub, and SCRUM based Agile methodology for our collaboration.", "./tripPlanningSite.html");
 addProject("./resources/javascript/jImages/fiveCentDevPic.png", "FiveCentDev Website", "March 2020", "JavaScript, HTML, CSS, Express (Node.js)", "", "This website! Clicking this banner will route you to the code on github.", "https://github.com/clovern/fiveCentDevVisible");
 addProject("./resources/javascript/jImages/BlockAndStreamCipher.png", "Message Encryption & Decryption", "June 2022", "C++", "", "Encrypts and decrypts file through a symmetric key system, using block or stream ciphers.", "./blockStreamCipher.html");
-addProject("./resources/javascript/jImages/SymbolTable.png", "Symbol Table", "July 2021", "C", "", "C program simulating the symbol table made by the assembler, which converts assembly code into machine language addresses.", "symbolTable.html");
+// addProject("./resources/javascript/jImages/SymbolTable.png", "Symbol Table", "July 2021", "C", "", "C program simulating the symbol table made by the assembler, which converts assembly code into machine language addresses.", "symbolTable.html");
 addProject("./resources/javascript/jImages/rentalStoreGUIPic.png", "App for Tracking Game Store Rentals", "March 2021", "Java", "", "App to help employees of a game rental store track information about customer rentals.", "./gameRental.html");
 
 // Below are older projects which are not being displayed currently
