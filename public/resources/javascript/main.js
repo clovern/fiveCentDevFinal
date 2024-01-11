@@ -18,6 +18,8 @@ addProject("./resources/javascript/jImages/fiveCentDevPic.png", "FiveCentDev Web
 addProject("./resources/javascript/jImages/BlockAndStreamCipher.png", "Message Encryption & Decryption", "June 2022", "C++", "", "Encrypts and decrypts file through a symmetric key system, using block or stream ciphers.", "./blockStreamCipher.html");
 // addProject("./resources/javascript/jImages/SymbolTable.png", "Symbol Table", "July 2021", "C", "", "C program simulating the symbol table made by the assembler, which converts assembly code into machine language addresses.", "symbolTable.html");
 addProject("./resources/javascript/jImages/rentalStoreGUIPic.png", "App for Tracking Game Store Rentals", "March 2021", "Java", "", "App to help employees of a game rental store track information about customer rentals.", "./gameRental.html");
+addProject("./resources/javascript/jImages/Euchre.png", "Euchre", "April 2020", "Python, Tkinter (GUI)", "", "Euchre game against 3 AI players", "./Euchre.html");
+addProject("./resources/javascript/jImages/wildChefMadness.png", "Wild Chef Madness", "January 2020", "Python, Brython", "", "Text branching game simulating a cooking show", "wildChefMadness.html");
 
 // Below are older projects which are not being displayed currently
 // addProject("./resources/javascript/jImages/gladiatorPIc.png", "Gladiator Game", "April 2021", "Java", "", "Survival text game implementing queus of monsters attacking from each cardinal direction", "./gladiator.html");
