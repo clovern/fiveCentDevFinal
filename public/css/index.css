@@ -119,6 +119,10 @@ a{
     padding-left: 5vw; 
 }
 
+.project .description{
+    margin-top: 2vh;
+}
+
 .project .details:hover{
     cursor: pointer;
 }
